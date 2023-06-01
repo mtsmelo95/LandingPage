@@ -40,7 +40,7 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
@@ -51,12 +51,12 @@ header{
 
 .box-img-header{
     height: 100%;
-
 }
 
 .img-logo{
     max-width: 50px;
     height: 100%;
+    align-items: center;
 }
 
 nav{
@@ -164,12 +164,10 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.second-section ul{
-    list-style: none;
+.second-section div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,12 +175,12 @@ strong{
     flex-wrap: wrap;
 }
 
-.second-section ul li{
+.second-section p{
     color: var(--dark4);
     letter-spacing: 2px;
     font-weight: bold;
 }
-.second-section ul li:hover{
+.second-section p:hover{
     color: var(--dark5);
     transition: .4s;
     cursor: default;
