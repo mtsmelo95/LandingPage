@@ -9,8 +9,8 @@
     --white: #fff;
     --dark1: #5858f5;
     --dark2: #0128b6;
-    --dark3: #1B2223;
-    --dark4: #3A4F50;
+    --green1: #1B2223;
+    --green2: #3A4F50;
     --dark5: #cbdad5;
     --dark6: #3737b8;
     --cyan1: #0EF6CC;
@@ -25,55 +25,51 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background: var(--dark3);
+    background: var(--green1);
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: var(--dark4);
+    background: var(--green2);
 }
 
 body{
-    background-color: var(--dark3);
+    background-color: var(--green1);
     height: 100vh;
     font-family: 'Lato';
+    margin: 0;
 }
 
-header{
+header {
     display: flex;
-    justify-content: space-evenly;
+    background-color: var(--green2);
+    justify-content: center;
+    height: 80px;
+}
+
+.options-header{
+    display: flex;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: .8rem;
-    background-color: var(--dark4);
-    min-height: 50px;
+    font-size: 20px;
 }
 
-.box-img-header{
-    height: 100%;
-}
-
-.img-logo{
-    max-width: 50px;
-    height: 100%;
-    align-items: left;
-}
-
-nav{
+nav {
     display: flex;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.nav-links{
+
+.nav-links {
+    display: flex;
+    margin: 0 10px;
     text-decoration: none;
     color: var(--white);
 }
 
+
 .nav-links:hover{
-    color: var(--dark4);
+    color: var(--green2);
     transition: .4s;
     text-decoration: underline;
 }
@@ -98,7 +94,7 @@ nav{
 
 .btn-actions:hover{
     background-color: var(--cyan1);
-    border: 1px solid var(--dark3);
+    border: 1px solid var(--green1);
     color: var(--dark1);
     transition: .4s;
 }
@@ -160,7 +156,7 @@ strong{
 }
 
 :is(.second-section, .fourth-section){
-    background-color: var(--dark4);
+    background-color: var(--green2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +240,7 @@ footer > div{
 }
 
 #my-projects-list a:hover{
-    color: var(--dark3);
+    color: var(--green1);
     transition: .4s;
     cursor: pointer;
 }
