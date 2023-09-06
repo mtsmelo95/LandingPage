@@ -7,12 +7,12 @@
 
 :root{
     --white: #fff;
-    --dark1: #5858f5;
-    --dark2: #0128b6;
+    --gray1: #b7bac3;
+    --gray2: #e4e4e4;
     --green1: #1B2223;
     --green2: #3A4F50;
     --dark5: #cbdad5;
-    --dark6: #3737b8;
+    --blue: #6e77ee;
     --cyan1: #0EF6CC;
 }
 
@@ -34,7 +34,7 @@
 
 
 body{
-    background-color: var(--green1);
+    background-color: var(--gray1);
     height: 100vh;
     font-family: 'Lato';
     margin: 0;
@@ -65,12 +65,12 @@ nav {
     display: flex;
     margin: 0 10px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--gray1);
 }
 
 
 .nav-links:hover{
-    color: var(--green2);
+    color: var(--green1);
     transition: .4s;
     text-decoration: underline;
 }
@@ -134,12 +134,12 @@ section{
 
 h1{
     font-size: 4rem;
-    color: var(--white);
+    color: var(--gray1);
     letter-spacing: 8px;
 }
 
 strong{
-    color: var(--cyan1);
+    color: var(--green1);
 }
 
 .first-section p{
@@ -247,5 +247,5 @@ footer > div{
 }
 
 :is(.img-profile, .img-who-am-i){
-    box-shadow: 1px 1px 1px 1px var(--cyan1);
+    box-shadow: 1px 1px 1px 1px var(--green2);
 }
